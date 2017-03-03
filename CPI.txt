@@ -1,0 +1,123 @@
+=============================
+Part1
+-fetch:ifqsize 1
+sim_CPI                      1.0825 # cycles per instruction
+clock_power            2507079.8054 # total power usage of clock
+-fetch:ifqsize 2
+sim_CPI                      0.6128 # cycles per instruction
+clock_power            1419180.5614 # total power usage of clock
+-fetch:ifqsize 4
+sim_CPI                      0.5517 # cycles per instruction
+clock_power            1277706.1623 # total power usage of clock
+-fetch:ifqsize 8
+sim_CPI                      0.5512 # cycles per instruction
+clock_power            1276531.7761 # total power usage of clock
+~~~~~~~~~~~~~~~~
+-decode:width 1
+sim_CPI                      1.0824 # cycles per instruction
+clock_power            2497212.1216 # total power usage of clock
+-decode:width 2
+sim_CPI                      0.6123 # cycles per instruction
+clock_power            1414004.2687 # total power usage of clock
+-decode:width 4
+sim_CPI                      0.5517 # cycles per instruction
+clock_power            1277706.1623 # total power usage of clock
+-decode:width 8
+sim_CPI                      0.5517 # cycles per instruction
+clock_power            1283592.9925 # total power usage of clock
+~~~~~~~~~~~~~~~~
+-issue:width 1
+sim_CPI                      1.8694 # cycles per instruction
+clock_power            3597788.0535 # total power usage of clock
+-issue:width 2
+sim_CPI                      0.9793 # cycles per instruction
+clock_power            1996177.4854 # total power usage of clock
+-issue:width 4
+sim_CPI                      0.5517 # cycles per instruction
+clock_power            1277706.1623 # total power usage of clock
+-issue:width 8
+sim_CPI                      0.5022 # cycles per instruction
+clock_power            1479541.3001 # total power usage of clock
+~~~~~~~~~~~~~~~~
+-commit:width 1
+sim_CPI                      1.0683 # cycles per instruction
+clock_power            2474249.1848 # total power usage of clock
+-commit:width 2
+sim_CPI                      0.5812 # cycles per instruction
+clock_power            1346159.8330 # total power usage of clock
+-commit:width 4
+sim_CPI                      0.5517 # cycles per instruction
+clock_power            1277706.1623 # total power usage of clock
+-commit:width 8
+sim_CPI                      0.5515 # cycles per instruction
+clock_power            1277366.8952 # total power usage of clock
+~~~~~~~~~~~~~~~~
+=============================
+Part2
+nottaken
+sim_CPI                      0.7679 # cycles per instruction
+bpred_nottaken.bpred_dir_rate    0.0431 # branch direction-prediction rate (i.e., all-hits/updates)
+taken
+sim_CPI                      0.7673 # cycles per instruction
+bpred_taken.bpred_dir_rate    0.0431 # branch direction-prediction rate (i.e., all-hits/updates)
+bimod
+sim_CPI                      0.5517 # cycles per instruction
+bpred_bimod.bpred_dir_rate    0.9725 # branch direction-prediction rate (i.e., all-hits/updates)
+2lev
+sim_CPI                      0.5523 # cycles per instruction
+bpred_2lev.bpred_dir_rate    0.9733 # branch direction-prediction rate (i.e., all-hits/updates)
+=============================
+Part3
+Cache Blcok Size: 32
+sim_CPI                      0.5551 # cycles per instruction
+ul2.misses                    34986 # total number of misses
+ul2.miss_rate                0.9982 # miss rate (i.e., misses/ref)
+Cache Blcok Size: 64
+sim_CPI                      0.5546 # cycles per instruction
+ul2.misses                     9053 # total number of misses
+ul2.miss_rate                0.2583 # miss rate (i.e., misses/ref)
+Cache Blcok Size: 128
+sim_CPI                      0.5654 # cycles per instruction
+ul2.misses                     4573 # total number of misses
+ul2.miss_rate                0.1305 # miss rate (i.e., misses/ref)
+Cache Blcok Size: 256
+sim_CPI                      0.5781 # cycles per instruction
+ul2.misses                     2317 # total number of misses
+ul2.miss_rate                0.0661 # miss rate (i.e., misses/ref)
+~~~~~~~~~~~~~~~~
+Cache Replacement Policy: f
+sim_CPI                      0.5546 # cycles per instruction
+ul2.misses                     9114 # total number of misses
+ul2.miss_rate                0.2600 # miss rate (i.e., misses/ref)
+ul2.repl_rate                0.2454 # replacement rate (i.e., repls/ref)
+Cache Replacement Policy: l
+sim_CPI                      0.5546 # cycles per instruction
+ul2.misses                     9053 # total number of misses
+ul2.miss_rate                0.2583 # miss rate (i.e., misses/ref)
+ul2.repl_rate                0.2437 # replacement rate (i.e., repls/ref)
+Cache Replacement Policy: r
+sim_CPI                      0.7639 # cycles per instruction
+ul2.misses                    15022 # total number of misses
+ul2.miss_rate                0.4286 # miss rate (i.e., misses/ref)
+ul2.repl_rate                0.4140 # replacement rate (i.e., repls/ref)
+~~~~~~~~~~~~~~~~
+Cache Associativity: 1
+sim_CPI                      4.9374 # cycles per instruction
+dl1.misses                    17681 # total number of misses
+ul2.misses                    35049 # total number of misses
+ul2.miss_rate                1.0000 # miss rate (i.e., misses/ref)
+Cache Associativity: 4
+sim_CPI                      0.5551 # cycles per instruction
+dl1.misses                    17681 # total number of misses
+ul2.misses                    34986 # total number of misses
+ul2.miss_rate                0.9982 # miss rate (i.e., misses/ref)
+Cache Associativity: 8
+sim_CPI                      0.5542 # cycles per instruction
+dl1.misses                    17681 # total number of misses
+ul2.misses                    17932 # total number of misses
+ul2.miss_rate                0.5116 # miss rate (i.e., misses/ref)
+Cache Associativity: 128
+sim_CPI                      0.5519 # cycles per instruction
+dl1.misses                    17681 # total number of misses
+ul2.misses                    17916 # total number of misses
+ul2.miss_rate                0.5112 # miss rate (i.e., misses/ref)

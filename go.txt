@@ -1,0 +1,44 @@
+=============================
+Part1
+-fetch:ifqsize 1
+sim_CPI                      1.3211 # cycles per instruction
+-fetch:ifqsize 2
+sim_CPI                      0.8829 # cycles per instruction
+-fetch:ifqsize 4
+sim_CPI                      0.7570 # cycles per instruction
+-fetch:ifqsize 8
+sim_CPI                      0.7514 # cycles per instruction
+~~~~~~~~~~~~~~~~
+-decode:width 1
+sim_CPI                      1.3210 # cycles per instruction
+-decode:width 2
+sim_CPI                      0.8819 # cycles per instruction
+-decode:width 4
+sim_CPI                      0.7570 # cycles per instruction
+-decode:width 8
+sim_CPI                      0.7570 # cycles per instruction
+~~~~~~~~~~~~~~~~
+-issue:width 1
+sim_CPI                      1.5319 # cycles per instruction
+-issue:width 2
+sim_CPI                      0.9450 # cycles per instruction
+-issue:width 4
+sim_CPI                      0.7570 # cycles per instruction
+-issue:width 8
+sim_CPI                      0.7485 # cycles per instruction
+~~~~~~~~~~~~~~~~
+-commit:width 1
+sim_CPI                      1.0539 # cycles per instruction
+-commit:width 2
+sim_CPI                      0.7871 # cycles per instruction
+-commit:width 4
+sim_CPI                      0.7570 # cycles per instruction
+-commit:width 8
+sim_CPI                      0.7563 # cycles per instruction
+~~~~~~~~~~~~~~~~
+=============================
+Part2
+nottaken
+sim_CPI                      1.0625 # cycles per instruction
+bpred_nottaken.bpred_dir_rate    0.3782 # branch direction-prediction rate (i.e., all-hits/updates)
+taken
